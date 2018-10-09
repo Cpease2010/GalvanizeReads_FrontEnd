@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="books_home">
-      <router-link :to="{name: 'Books'}">
+      <router-link :to="{name: 'BooksPage'}" exact>
       <img src="https://via.placeholder.com/600x600" alt="">
       <h1>Books</h1>
       </router-link>
