@@ -1,18 +1,18 @@
 <template>
   <div class="books">
     <ul>
-      <Book  v-for='book in allBooks' :key='book.ID' :single-book="book"/>
+      <OneBook  v-for='book in allBooks' :key='book.ID' :singleBook='book'/>
     </ul>
   </div>
 </template>
 
 <script>
-import Book from '../components/Book.vue'
+import OneBook from '../components/OneBook.vue'
 export default {
-  name: 'Books',
+  name: 'BooksPage',
   props: ['allBooks'],
   components: {
-    Book
+    OneBook
   }
 }
 </script>
