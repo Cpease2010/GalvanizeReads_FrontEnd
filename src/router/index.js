@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/pages/Home'
-import BooksPage from '@/pages/BooksPage'
-import NewBook from '@/pages/NewBook'
-import Onebook from '@/components/Onebook'
+import home from '../pages/home'
+import booksPage from '../pages/booksPage'
+import newBook from '../pages/newBook'
+import oneBook from '../components/oneBook'
 
 Vue.use(Router)
 
@@ -11,24 +11,24 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: Home
+      name: 'home',
+      component: home
     },
     {
       path: '/books',
-      name: 'BooksPage',
-      component: BooksPage
+      name: 'booksPage',
+      component: booksPage
     },
     {
       path: '/books/:singleBook',
-      name: 'OneBook',
-      component: Onebook,
+      name: 'oneBook',
+      component: oneBook,
       props: true
     },
     {
       path: '/books/new',
-      name: 'NewBook',
-      component: NewBook
+      name: 'newBook',
+      component: newBook
     }
   ]
 })

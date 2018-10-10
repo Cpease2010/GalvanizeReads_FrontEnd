@@ -1,7 +1,7 @@
 <template>
   <div class="singleBook">
     <li>
-      <router-link :to="{name: 'OneBook', params: {singleBook: singleBook}}">
+      <router-link :to="{name: 'oneBook', params: {singleBook: singleBook}}">
         <h1>Title: {{singleBook['Book Title']}}</h1>
       </router-link>
       <h2>Author: {{`${singleBook['Author 1 First Name']} ${singleBook['Author 1 Last Name']}`}}</h2>
@@ -15,8 +15,13 @@
 
 <script>
 export default {
-  name: 'OneBook',
-  props: ['singleBook']
+  name: 'oneBook',
+  props: ['singleBook'],
+  methods: {
+    deleteBook(id){
+    
+    }
+  }
 }
 </script>
 

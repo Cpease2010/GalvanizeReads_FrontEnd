@@ -1,13 +1,13 @@
 <template>
   <div class="home">
-    <div class="books_home">
-      <router-link :to="{name: 'BooksPage'}" exact>
-      <img src="https://via.placeholder.com/600x600" alt="">
+    <div>
+      <router-link :to="{name: 'booksPage'}" exact>
+      <img src="https://via.placeholder.com/300x300" alt="">
       <h1>Books</h1>
       </router-link>
     </div>
-    <div class="authors_home">
-      <img src="https://via.placeholder.com/600x600" alt="">
+    <div>
+      <img src="https://via.placeholder.com/300x300" alt="">
       <h1>Author</h1>
     </div>
   </div>
@@ -15,18 +15,14 @@
 
 <style scoped>
 .home{
+  padding-top: 50px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  height: 90vh;
-}
-.books_home{
-  flex-basis: 50%;
-}
-.authors_home{
-  flex-basis: 50%;
+  height: auto;
 }
 </style>
 

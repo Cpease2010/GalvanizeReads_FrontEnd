@@ -1,19 +1,19 @@
 <template>
   <div class="books">
-    <button><router-link :to="{name: 'NewBook'}">New Book</router-link></button>
+    <button><router-link :to="{name: 'newBook'}">New Book</router-link></button>
     <ul>
-      <OneBook  v-for='book in allBooks' :key='book.ID' :singleBook='book'/>
+      <oneBook  v-for='book in allBooks' :key='book.ID' :singleBook='book'/>
     </ul>
   </div>
 </template>
 
 <script>
-import OneBook from '../components/OneBook.vue';
+import oneBook from '../components/oneBook.vue';
 export default {
-  name: 'BooksPage',
+  name: 'booksPage',
   props: ['allBooks'],
   components: {
-    OneBook
+    oneBook
   }
 }
 </script>

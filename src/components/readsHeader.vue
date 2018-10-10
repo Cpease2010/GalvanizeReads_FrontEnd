@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="readsHeader">
     <img src='../assets/gLogo.png'>
     <h1>Cory Reads Galvanize</h1>
   </div>
@@ -12,13 +12,13 @@ export default {
 </script>
 
 <style scoped>
-  .header{
+  .readsHeader{
     display: flex;
     flex-direction: row;
     color: #E28C05;
     align-items: center;
   }
-  .header img{
+  .readsHeader img{
     height: 50px;
     width: 50px;
   }
